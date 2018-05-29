@@ -6,13 +6,16 @@
  */
 
 console.log("hello");
-var firstNum = document.getElementById(n1);
-var secondNum = document.getElementById(n2);
+var firstNum = document.getElementById('n1').value;
+var secondNum = document.getElementById('n2').value;
+console.log(firstNum);
 
 function plus(firstNum, secondNum){
 	console.log(1);
-	alert(Number(firstNum) + Number(secondNum));
+	console.log(firstNum);
+	return firstNum + secondNum;
 }
+alert(plus(firstNum, secondNum));
 
 function subtract(firstNum, secondNum){
 	console.log(2);

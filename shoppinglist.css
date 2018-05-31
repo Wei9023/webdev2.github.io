@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2018-05-30 21:54:43
+ * @version $Id$
+ */
+.container{
+	width: 500px;
+}
+
+.container button {
+	float: right;
+}
+
+.done {
+	text-decoration: line-through;
+}

@@ -9,7 +9,7 @@ var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector('ul');
 var listItems = document.getElementsByTagName("li");
-var deleteBtn = document.getElementsByTagName("button");
+
 
 //get length of list
 function listLength() {

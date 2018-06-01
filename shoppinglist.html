@@ -5,41 +5,28 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>Shopping list</title>
 <link href="shoppinglist.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1> Shopping List</h1>
-    <p>Get it done today</p>
-	<div>
-		<input id="userinput" placeholder="add new item">
-		<button id="enter">Add</button>
-	</div>
     <div class="container">
-	    <ul>
-	    	<li>Notebook
-	    		<button class="buttonDone">Done</button>
-	    		<button class="delete">Delete</button>
-	    	</li>
-	    	<li>Jello
-	    		<button class="buttonDone">Done</button>
-	    		<button class="delete">Delete</button>
-	    	</li>
-	    	<li>Spinach
-				<button class="buttonDone">Done</button>
-				<button class="delete">Delete</button>
-	    	</li>
-	    	<li>Rice
-				<button class="buttonDone">Done</button>
-				<button class="delete">Delete</button>
-	    	</li>
-	    	<li>Birthday Cake
-				<button class="buttonDone">Done</button>
-				<button class="delete">Delete</button>
-	    	</li>
-	    	<li>Candles
-				<button class="buttonDone">Done</button>
-				<button class="delete">Delete</button>
-	    	</li>
-	    </ul>
+    	<h1> Shopping List<i class="fa fa-plus"></i></h1>
+    	<p>Get it done today</p>
+    		<input id="inp" type="text" placeholder="add new item">
+		    <ul>
+		    	<li ><span><i class="fa fa-trash"></i></span> Notebook</li>
+				<li ><span><i class="fa fa-trash"></i></span> Jello</li>
+				<li ><span><i class="fa fa-trash"></i></span> Spinach</li>
+				<li ><span><i class="fa fa-trash"></i></span> Rice</li>
+				<li ><span><i class="fa fa-trash"></i></span> Birthdaycake</li>
+				<li ><span><i class="fa fa-trash"></i></span> Candles</li>
+		    </ul>
 	</div>
+
+<script type="text/javascript" src="shoppinglist.js"></script>
 </body>
 </html>

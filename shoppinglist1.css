@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2018-06-01 15:13:52
+ * @version $Id$
+ */
+.done {
+  text-decoration: line-through;
+}
+
+li:hover {
+  cursor: pointer;
+}

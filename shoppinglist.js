@@ -32,9 +32,10 @@ $("input[type='text']").keypress(function(event){
 		//$(this).val("");
 		//creat a new li and add to ul
 		$("ul").append("<li><span><i class='fa fa-trash'></i></span>" + todoText + "</li>");
-		console.log($("input[type='text']").value);
+		console.log($("input[type='text']").val());
+		$("#inp").val("");
 	}
-	$("#inp").value = "";
+	
 });
 
 $(".fa-plus").click(function(){

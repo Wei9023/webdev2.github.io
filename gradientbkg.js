@@ -11,6 +11,8 @@ var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 var randomBtn = document.getElementById("randomBtn");
 
+body.addEventListener("onload", randomColor);
+
 function changeBackground(){
 	body.style.background = 
 	"linear-gradient(to right," 
@@ -26,6 +28,15 @@ color1.addEventListener("input", changeBackground);
 
 color2.addEventListener("input", changeBackground);
 
+
+
+function randomColor() {
+	var r = Math.floor(Math.random() * 256);
+	var g = Math.floor(Math.random() * 256);
+	var b = Math.floor(Math.random() * 256);
+	return "rgb(" + r + ", " + g + ", " + b + ")";
+}
+
 randomBtn.addEventListener("click", function(){
 	body.style.background = 
 	"linear-gradient(to right," 
@@ -34,11 +45,9 @@ randomBtn.addEventListener("click", function(){
 	+ randomColor() 
 	+ ")";
 	css.textContent = body.style.background +";"
+	console.log(body.style.background);
 })
 
-function randomColor() {
-	var r = Math.floor(Math.random() * 256);
-	var g = Math.floor(Math.random() * 256);
-	var b = Math.floor(Math.random() * 256);
-	return "rgb(" + r + ", " + g + ", " + b + ")";
-}
+
+
+

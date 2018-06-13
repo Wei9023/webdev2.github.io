@@ -15,11 +15,22 @@ promise1.then(function(value){
 	console.log(value);
 })
 
+//answer
+const promise = Promise.resolve(
+  setTimeout(() => {
+    console.log("success");
+  }, 4000)
+);
+
 // #4) Catch this error and console log 'Ooops something went wrong'
 var promise2 = Promise.reject('failed')
 promise2.then(resp=> {
 	console.log(resp);
 }).catch(console.log('Ooops something went wrong'));
+
+//answer
+Promise.reject('failed')
+  .catch(console.log('Ooops something went wrong'))
 
 // #5) Use Promise.all to fetch all of these people from Star Wars (SWAPI) at the same time.
 // Console.log the output and make sure it has a catch block as well.
@@ -38,6 +49,18 @@ Promise.all(urls.map(url => {
 	console.log(results[2]);
 	console.log(results[3]);
 }).catch(() => console.log('error!'));
+
+//answer
+Promise.all(urls.map(url =>
+    fetch(url).then(people => people.json())
+))
+  .then(array => {
+    console.log('1', array[0])
+    console.log('2', array[1])
+    console.log('3', array[2])
+    console.log('4', array[3])
+  })
+  .catch(err => console.log('ughhhh fix it!', err));
 
 // #6) Change one of your urls above to make it incorrect and fail the promise
 // does your catch block handle it?
